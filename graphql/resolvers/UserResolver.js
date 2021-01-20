@@ -31,7 +31,6 @@ const userResolvers = {
         const regUser = (await db.getCollection("users").insertOne(newUser))
           .ops[0];
         const token = getToken(regUser);
-        console.log(...regUser);
         return { ...regUser, token };
       } catch (e) {
         throw e;
