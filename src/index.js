@@ -33,7 +33,7 @@ const server = new ApolloServer({
 app.get("/", (req, res) => {
   return res.status(200).json({
     status: 200,
-    message: `🚀 Server ready at https://co1tn.sse.codesandbox.io/graphql`
+    message: `🚀 Server ready at ------`
   });
 });
 
